@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hashtagram - Realtime Slideshow for Instagram Photos</title>
+	<link rel="stylesheet" type="text/css" href="css/default-min3860.css?v=1"/>
+	<link href='favicon.html' rel='shortcut icon' type='image/x-icon' />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--<meta name="google-site-verification" content=" " /> -->
+	<!--<meta name="viewport" content="width=device-width"/>-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" href="img/icon57.png"/>
+
+	<link rel="apple-touch-startup-image" href="img/touch.png" />
+	
+	<link rel="canonical" href="index.html"/>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Description" content="hashtagram - your realtime lightbox for instagram photos. Instagram pictures shared on Twitter." />
+</head>
+<body>			
+	<div id="widgetbody" class="widgetbody">
+		<div id="imgarea" >
+			<span>
+				<img src="img/hashtagram_logo_export.png" alt="hashtagram" width="459" height="80" />
+				<div id="status">The realtime slideshow for Instagram photos</div>		
+			</span>		
+		</div>
+		
+		<div id="widget_tweet_area">
+			<h1><a href="#" id="logo"></a></h1>
+
+				<div id="tweet_area">
+				</div>
+				<div id="search_area">
+					<form id="search_form" action="#">
+						<div>
+							<label for="searchfld">
+							 	<input id="searchfld" type="text" name="searchfld" class="search_text" value=""/>
+							</label>
+					  	</div>
+						<a id="searchbt" href="#" class="search_bt"></a>
+					</form>
+					<div id="recomended_links">
+						(promoted) <a href='#!{"search":"#pet"}'>#pet</a>
+						<a href='#!{"search":"#flower"}'>#flower</a>
+						<a href='#!{"search":"#london"}'>#london</a>
+						<a href='#!{"search":"#landscape"}'>#landscape</a>
+						<!--<a href='#!{"search":"#cats"}'>#cats</a>
+						<a href='#!{"search":"#tatto"}'>#tatto</a>
+						<a href='#!{"search":"#car"}'>#car</a>-->
+					</div>
+					<div id="share_buttons">
+						<a href="http://twitter.com/share" class="twitter-share-button" data-text="Hashtagram - The realtime slideshow for Instagram photos" data-count="horizontal" data-via="hashtagramcom" data-related="socialbro:Twitter Analytics Tool">Tweet</a><script type="text/javascript" src="../platform.twitter.com/widgets.js"></script>
+						<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.hashtagram.com&amp;layout=button_count&amp;width=110&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;" allowTransparency="true"></iframe>
+						
+						<span>powered by <a href="http://e24apps.com/">e24apps</a></span>
+					</div>	
+					
+				</div>	
+			
+		</div>
+	</div>
+
+	<script src="js/hashtagram-min1bce.js?v=6"></script>	
+	<script >
+		var realTimePics = new RealTimePics({
+			el: 'imgarea', 
+			query: '', 
+			sources: 'instagr.am',
+			mode: 'forward', 
+			method: 'search',
+			delay: 1000, 
+			fade_delay: 2500, 
+			move_delay: 5000, 
+			width: 600, 
+			height: 400, 
+			tweet_height: 92
+		});	
+	</script>	
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1696092-32']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
